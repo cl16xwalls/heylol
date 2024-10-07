@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heylol</title>
+    <link rel="icon" type="image/jpeg" href="images/smirk.jpeg">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: rgb(69, 71, 71);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: grey;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: whitesmoke;
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1.2rem;
+            color: whitesmoke;
+            margin-bottom: 20px;
+        }
+        .heart {
+            font-size: 3rem;
+            color: red;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .heart:hover {
+            transform: scale(1.2);
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            background-color: #5f5057;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #000000;
+        }
+        #finalMessage {
+            display: none;
+            font-size: 1.5rem;
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>hey babygirl *insert lip bite emoji*</h1>
+    <p>i need to ask you smth :3</p>
+    <div class="heart">❤️</div>
+    <p>*yes i coded an entire website for you :p *</p>
+    
+    <div id="finalMessage">
+        <p>can i be your gf :></p>
+        <button class="button" onclick="sayYes()">Yes!!</button>
+        <button class="button" onclick="sayNo()">No >:( </button>
+    </div>
+</div>
+
+<script>
+    document.querySelector('.heart').addEventListener('click', function() {
+        document.getElementById('finalMessage').style.display = 'block';
+    });
+
+    function sayYes() {
+        alert("YIPPEE :D ILOVEYOUSOMUCH MWAH 💋");
+    }
+
+    function sayNo() {
+        alert("not an option lol ALSO HOW DARE YOU I CODED A WEBSITE FOR YOU I WOULD NEVER DO THIS FOR ANYONE ELSE >:( also this just proves how much ily heheheh")
+    }
+</script>
+
+</body>
+</html>
